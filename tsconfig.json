@@ -1,0 +1,20 @@
+{
+	"compilerOptions": {
+		"target": "ESNext",
+		"module": "ESNext",
+		"types": ["node"],
+		"lib": ["ES2022", "DOM", "DOM.Iterable"],
+		"allowSyntheticDefaultImports": true,
+		"allowImportingTsExtensions": true,
+		"esModuleInterop": true,
+		"moduleResolution": "bundler",
+		"jsx": "preserve",
+		"jsxImportSource": "ripple",
+		"isolatedModules": true,
+		"emitDeclarationOnly": true,
+		"declaration": true,
+		"outDir": "dist",
+		"removeComments": false
+	},
+	"include": ["src", "ripple.d.ts"],
+}
