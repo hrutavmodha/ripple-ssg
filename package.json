@@ -2,7 +2,7 @@
   "name": "riptle",
   "version": "0.0.1",
   "description": "",
-  "main": "src/main.ts",
+  "main": "./dist/index.js",
   "sideEffects": true,
   "type": "module",
   "keywords": [],
@@ -18,6 +18,7 @@
   },
   "files": [
     "./dist/",
+    "./README.md",
     "./package.json"
   ],
   "peerDependencies": {
