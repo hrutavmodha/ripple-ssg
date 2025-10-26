@@ -10,6 +10,16 @@
   "scripts": {
     "build": "tsc"
   },
+  "exports": {
+    ".": {
+      "types": "./dist/types/routes.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "./dist/",
+    "./package.json"
+  ],
   "peerDependencies": {
     "ripple": "^0.2.134"
   },
