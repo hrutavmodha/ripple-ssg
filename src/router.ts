@@ -1,4 +1,4 @@
-import type { Route, url } from '../types/routes'
+import type { Route, url } from '../types/routes.js'
 import { mount } from 'ripple'
 
 let routes: Route = {}
@@ -15,12 +15,12 @@ export function navigate(to: url): void {
 export function renderRoute(p: url): void {
     const target = document.getElementById('root') as HTMLDivElement
     const cleanUrl = p.startsWith('/') ? p : `/${p}`
-
     target.innerHTML = ''
     const Component = routes[cleanUrl]
-
     if (Component) {
-        mount(Component, { target })
+        mount(Component, {
+            target: target
+        })
     } else {
         target.innerHTML = `<h1>404 - Not Found</h1>`
     }

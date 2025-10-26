@@ -1,8 +1,8 @@
 export {
     renderMarkdownToString,
     buildStaticSite
-} from './main'
+} from './main.js'
 
-export { default as loadRoutes } from './loadConfig'
+export { default as loadRoutes } from './loadConfig.js'
 
-export { setRoutes, navigate } from './router'
+export { setRoutes, navigate } from './router.js'
