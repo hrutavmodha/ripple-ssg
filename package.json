@@ -1,25 +1,24 @@
 {
-  "name": "ripple-ssg",
+  "name": "riptle",
   "version": "0.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/main.ts",
+  "sideEffects": true,
   "type": "module",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Hrutav Modha",
+  "scripts": {
+    "build": "tsc"
+  },
   "peerDependencies": {
     "ripple": "^0.2.134"
   },
   "devDependencies": {
     "@types/node": "^24.9.1",
-    "jsdom": "^27.0.1",
-    "ripple-markdown": "^0.0.4",
     "ts-node": "^10.9.2"
   },
   "dependencies": {
+    "marked": "^16.4.1",
     "vitest": "^4.0.2"
   }
 }

@@ -5,16 +5,23 @@
 		"types": ["node"],
 		"lib": ["ES2022", "DOM", "DOM.Iterable"],
 		"allowSyntheticDefaultImports": true,
-		"allowImportingTsExtensions": true,
+		"allowImportingTsExtensions": false,
 		"esModuleInterop": true,
 		"moduleResolution": "bundler",
 		"jsx": "preserve",
 		"jsxImportSource": "ripple",
 		"isolatedModules": true,
-		"emitDeclarationOnly": true,
+		"emitDeclarationOnly": false,
 		"declaration": true,
 		"outDir": "dist",
 		"removeComments": false
 	},
-	"include": ["src", "ripple.d.ts"],
+	"include": [
+		"./src/",
+		"./index.ts"
+	],
+	"exclude": [
+		"node_modules/", 
+		"tests/",
+	]
 }
